@@ -1,0 +1,37 @@
+.hieu .row{
+	background-color: #CFFAFE;
+	 border: 1px solid black;
+}
+
+.timkiem .col-sm-2 .dropdown > ul :hover {
+	background-color: #CFFAFE;
+	list-style-type: none;
+  	margin-top: 5px;
+
+  	border-radius: 4px;
+}
+
+
+.timkiem .col-sm-2 li{
+  	list-style-type: none;
+  	margin-top: 5px;
+  	padding:10px 0 10px 5px;
+  	border-radius: 4px;		
+  	text-decoration: none;
+
+}
+.container {
+	float: left;
+	margin-left: 20px;
+	}
+.pagination li{
+	padding: 10px 10px 10px 10px;
+	font-size: 20px;
+	border: 2px solid #50B1FF;
+
+	background-color: #A7F7FF;
+	}
+.pagination li: hover{
+	color: blue;
+
+	}
