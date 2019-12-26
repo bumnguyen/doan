@@ -52,9 +52,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="admin/danhthu/theongay" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <p>Danh Thu</p>
                 </a>
               </li>
               <li class="nav-item">

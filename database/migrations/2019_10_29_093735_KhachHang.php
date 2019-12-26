@@ -20,6 +20,7 @@ class KhachHang extends Migration
             $table->integer('idGoiDichVu')->unsigned();
             $table->foreign('idGoiDichVu')->references('id')->on('GoiDichVu');
             $table->string('Ten');
+            $table->string('Hinh');
             $table->string('TenKhongDau');
             $table->double('Thu');
             $table->string('DienThoai');

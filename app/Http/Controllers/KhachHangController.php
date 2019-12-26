@@ -234,7 +234,7 @@ class KhachHangController extends Controller
     }  
     public function getlistlichsugiaodich()
     {
-        $data = ListLichSuGiaoDich::paginate(5);;
+        $data = ListLichSuGiaoDich::paginate(5);
         return view('admin.khachhang.listlichsugiaodich',['data'=>$data]);
     }  
 }

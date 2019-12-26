@@ -94,4 +94,9 @@ Route::group(['prefix'=>'admin', 'middleware'=>'adminLogin'], function(){
 		Route::get('xoa/{id}', 'UserController@getXoa');
 
 	});
+	Route::group(['prefix'=>'danhthu'], function(){
+		Route::get('theongay', 'DanhThuController@getTheoNgay');	
+		Route::post('theongay', 'DanhThuController@postTheoNgay');
+		Route::get('theongay/{id}', 'DanhThuController@getDanhSach');
+	});
 }); 
