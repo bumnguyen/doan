@@ -17,17 +17,17 @@
 				    <tbody>
 				      <tr>
 				        <td>Số dịch vụ</td>
-				        <td>{{$dichvu}}</td>
+				        <td><strong>{{$dichvu}}</strong></td>
 				        
 				      </tr>
 				      <tr>
 				        <td>Tổng số dịch vụ</td>
-				        <td>{{$tongsodichvu}}</td>
+				        <td><strong>{{$tongsodichvu}}</strong></td>
 				       
 				      </tr>
 				      <tr>
 				        <td>Doanh Thu</td>
-				        <td>{{$tongDanhThu}}.000đ</td>
+				        <td><strong>{{$tongDanhThu}}.000 đ</strong></td>
 				      
 				      </tr>
 				    </tbody>
@@ -47,22 +47,22 @@
 				      <tr class="even pointer">	
 				      	<td align="left" ><a href="admin/danhthu/theongay/1">Yoga</a></td>
 				        <td align="left" >{{$yoga}}</td>
-				        <td align="left">{{$sogoiyoga}}</td>
+				        <td align="left"><strong>{{$sogoiyoga}}</strong></td>
 				      </tr>
 				      <tr class="even pointer">	
 				      	<td align="left" ><a  href="admin/danhthu/theongay/2">Aerobic</a></td>
 				        <td align="left" >{{$aerobic}}</td>
-				        <td align="left">{{$sogoiaerobic}}</td>
+				        <td align="left"><strong>{{$sogoiaerobic}}</strong></td>
 				      </tr>
 				      <tr class="even pointer">	
 				      	<td align="left" ><a  href="admin/danhthu/theongay/3">Boxing</a></td>
 				        <td align="left" >{{$boxing}}</td>
-				        <td align="left">{{$sogoiboxing}}</td>
+				        <td align="left"><strong>{{$sogoiboxing}}</strong></td>
 				      </tr>
 				      <tr class="even pointer">	
 				      	<td align="left" ><a  href="admin/danhthu/theongay/4">Zumba</a></td>
 				        <td align="left" >{{$zumba}}</td>
-				        <td align="left">{{$sogoizumba}}</td>
+				        <td align="left"><strong>{{$sogoizumba}}</strong></td>
 				      </tr>
 				    </tbody>
 				  </table>

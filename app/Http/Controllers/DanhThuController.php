@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 class DanhThuController extends Controller
 {
      public function getTheoNgay(){
-     	$data = ListLichSuGiaoDich::orderBy('Ten', 'asc')->paginate(5); //lấy tất cả dữ liệu 
+     	$data = ListLichSuGiaoDich::where('idDichVu','=',0)->paginate(5); //lấy tất cả dữ liệu 
      	$tongDanhThu =  DB::table('ListLichSuGiaoDich')->sum('Thu');
      	$tongSoDichVu =  DB::table('ListLichSuGiaoDich')->count();
      	$yoga  = DB::table('ListLichSuGiaoDich')
@@ -52,7 +52,7 @@ class DanhThuController extends Controller
         return view('admin.danhthu.danhthungay',['khachhang'=>$data]);
     }
     public function getDanhSach($id){
-     	$data = ListLichSuGiaoDich::where('idDichVu','=',$id)->paginate(5);;
+     	$data = ListLichSuGiaoDich::where('idDichVu','=',$id)->paginate(5);
         $tongDanhThu =  DB::table('ListLichSuGiaoDich')->sum('Thu');
         $tongSoDichVu =  DB::table('ListLichSuGiaoDich')->count();
         $yoga  = DB::table('ListLichSuGiaoDich')
@@ -87,4 +87,7 @@ class DanhThuController extends Controller
             'dichvu'=> $dichvu, 
             'tongsodichvu'=> $tongSoDichVu]);
     }
+    public function index(){
+        return view('frontend.index');
+      }  
 }

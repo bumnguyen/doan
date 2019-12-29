@@ -100,3 +100,8 @@ Route::group(['prefix'=>'admin', 'middleware'=>'adminLogin'], function(){
 		Route::get('theongay/{id}', 'DanhThuController@getDanhSach');
 	});
 }); 
+
+
+Route::group(['prefix'=>'frontend'], function(){
+	Route::get('index', 'DanhThuController@index');	
+}); 
