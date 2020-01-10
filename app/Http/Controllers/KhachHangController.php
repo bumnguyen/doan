@@ -25,24 +25,22 @@ class KhachHangController extends Controller
 
         $this->validate($request,
           [
-              'Ten' =>'required:KhachHang,Ten|min:3|max:100'
+              'Ten' =>'required:KhachHang,Ten|min:3|max:100',
+              'DienThoai'=>'required|unique:KhachHang'
           ],
           [
               'Ten.required'=>'Bạn nhập ngu vl chưa nhập tên dich vu',
               'Ten.min'=>'Tên phải dài từ 3 đến 100 kí tự nha mài',
               'Ten.max'=>'Tên phải dài từ 3 đến 100 kí tự nha mài',
+              'DienThoai.unique'=>'Đã bị trùng'
           ]);
-        $file = $request->file('Hinh'); //lấy file ảnh đó về
-        $duoi = $file->getClientOriginalExtension('Hinh');//lấy 
-        $ten = str_slug($request->Ten).$request->NgaySinh.'.'.$duoi; 
-        $file->move('upload/khachhang',  $ten );
         $khachhang->Ten = $request->Ten;
         $khachhang->TenKhongDau = str_slug($request->Ten);
         $khachhang->idDichVu = $request->DichVu;
         $khachhang->idGoiDichVu = $request->GoiDichVu;
         $khachhang->Thu = $request->Thu;
         $khachhang->DienThoai = $request->DienThoai;
-        $khachhang->Hinh= $ten ;
+        $khachhang->password = bcrypt($request->password);
         $khachhang->NgaySinh = $request->NgaySinh;
         $khachhang->NgayDangKy = $request->NgayDangKy;
         $khachhang->DiaChi = $request->DiaChi;
@@ -126,11 +124,13 @@ class KhachHangController extends Controller
       	$this->validate($request,
           [
               'Ten' =>'required:KhachHang,Ten|min:3|max:100',
-              'Hinh'=>'required:KhachHang,Ten|min:3|max:100'
+              'Hinh'=>'required:KhachHang,Ten|min:3|max:100',
+              'DienThoai'=>'required|unique:KhachHang,Ten|min:3|max:100'
           ],
           [
               'Ten.required'=>'Bạn nhập ngu vl chưa nhập tên dich vu',
               'Ten.min'=>'Tên phải dài từ 3 đến 100 kí tự nha ',
+              'DienThoai.unique'=>'Đã bị trùng',
               'Ten.max'=>'Tên phải dài từ 3 đến 100 kí tự nha ',
               'Hinh.required'=>'Chưa chọn ảnh',
           ]);
@@ -149,6 +149,7 @@ class KhachHangController extends Controller
         $khachhang->DienThoai = $request->DienThoai;
         $khachhang->NgaySinh = $request->NgaySinh;
         $khachhang->Hinh= $ten ;
+        $khachhang->password = bcrypt($request->password);
         $khachhang->NgayDangKy = $request->NgayDangKy;
         $khachhang->DiaChi = $request->DiaChi;
         $khachhang->BatDau = $request->BatDau;
@@ -232,7 +233,7 @@ class KhachHangController extends Controller
         $data = ListLichSuGiaoDich::where('Ten', 'like', "%$tukhoa%")->orwhere('TenKhongDau', 'like', "%tukhoa%")->take(30)->paginate(5);
         return view('admin.khachhang.listlichsugiaodich', ['data'=>$data, 'tukhoa'=>$tukhoa]); 
     }  
-    public function getlistlichsugiaodich()
+    public function getlistlichsugiaodich()   
     {
         $data = ListLichSuGiaoDich::paginate(5);
         return view('admin.khachhang.listlichsugiaodich',['data'=>$data]);

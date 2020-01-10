@@ -15,13 +15,14 @@ class KhachHang extends Migration
     {
         Schema::create('khachhang', function (Blueprint $table) {
             $table->increments('id');
-             $table->integer('idDichVu')->unsigned();
+            $table->integer('idDichVu')->unsigned();
             $table->foreign('idDichVu')->references('id')->on('DichVu');
             $table->integer('idGoiDichVu')->unsigned();
             $table->foreign('idGoiDichVu')->references('id')->on('GoiDichVu');
             $table->string('Ten');
             $table->string('Hinh');
             $table->string('TenKhongDau');
+            $table->string('password');
             $table->double('Thu');
             $table->string('DienThoai');
             $table->date('NgaySinh');

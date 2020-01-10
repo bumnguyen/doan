@@ -68,7 +68,7 @@
 				  </table>
 			</div>
 		</div>	
-		<div>
+		<div class="col-sm-11">
 			<table class="table table-striped jambo_table bulk_action">
 				    <thead>
 				      <tr>

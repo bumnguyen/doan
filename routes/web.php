@@ -1,4 +1,4 @@
-<?php
+<?php  
 
 Route::get('/', function () {
     return view('welcome');
@@ -99,9 +99,23 @@ Route::group(['prefix'=>'admin', 'middleware'=>'adminLogin'], function(){
 		Route::post('theongay', 'DanhThuController@postTheoNgay');
 		Route::get('theongay/{id}', 'DanhThuController@getDanhSach');
 	});
+	Route::group(['prefix'=>'dangky'], function(){
+		Route::get('danhsach', 'DangKyController@danhsach');	
+		Route::get('xoa/{id}', 'DangKyController@getXoa');
+		Route::get('sua/{id}', 'DangKyController@getSua');
+		Route::post('sua/{id}', 'DangKyController@postSua');
+		Route::post('timkiem', 'DangKyController@postTimKiem');
+	});
 }); 
 
 
 Route::group(['prefix'=>'frontend'], function(){
-	Route::get('index', 'DanhThuController@index');	
+	Route::get('index', 'FrontendController@index');	
+	Route::post('dangky', 'FrontendController@dangky');
+	Route::get('dangnhap', 'FrontendController@dangnhap');
+	Route::post('dangnhap', 'FrontendController@postdangnhap');
+	Route::get('thongtin', 'FrontendController@thongtin');
+	//Danh sách
+
 }); 
+?>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Gymer &mdash; Website by Colorlib</title>
+  <title>Frontend</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,7 +26,7 @@
   <link href="{{asset('frontend/css/jquery.mb.YTPlayer.min.css')}}" media="all" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
-  <base href="{{asset('')}}">
+ 
 
 
 </head>
@@ -64,13 +64,16 @@
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block">
-                <li class="cta"><a href="#contact-section" class="nav-link"><span
-                      class="rounded border border-primary">Contact</span></a></li>
+                <li class="cta"><a href="dangnhap" class="nav-link"><span
+                      class="rounded border border-primary">Login</span></a></li>
+                <li class="cta"><a href="dangnhap" class="nav-link"><span
+                      class="rounded border border-primary">Log Out</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span
                 class="icon-menu h3"></span></a>
           </div>
+
         </div>
       </div>
 
@@ -228,7 +231,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5">
-            <h2 class="section-title">Schedule</h2>
+            <h2 class="section-title">Thời gian</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam
               voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias
               blanditiis consequuntur
@@ -267,36 +270,37 @@
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
                 <table class="table table-bordered table-custom table-striped ">
-                  
+                  <thead >
+                    <tr>
+                      <td style="color: ">DichVu</td>
+                      <td>Giờ</td>
+                      <td>Hướng dẫn viên</td>
+                      <td>Đăng kí ngay</td>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <td>Gym</td>
+                      <td>Yoga</td>
                       <td>8:00am - 10:00am</td>
-                      <td>John Doe</td>
+                      <td>Minh Hiếu</td>
                       <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
                     </tr>
                     <tr>
-                      <td>Meditation</td>
+                      <td>Aerobic</td>
                       <td>10:00am - 10:30am</td>
-                      <td>James Holmes</td>
+                      <td>Thái Phạm</td>
                       <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
                     </tr>
                     <tr>
-                      <td>Weight Lifting</td>
+                      <td>Boxing</td>
                       <td>1:00pm - 2:30pm</td>
-                      <td>Ben Smith</td>
+                      <td>Thành Long</td>
                       <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
                     </tr>
                     <tr>
-                      <td>Crossfit</td>
+                      <td>Zumba</td>
                       <td>3:00pm - 3:45pm</td>
-                      <td>Craig Peters</td>
-                      <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
-                    </tr>
-                    <tr>
-                      <td>Aerobics</td>
-                      <td>5:00pm - 5:30pm</td>
-                      <td>Paul Green</td>
+                      <td>Bùi Huy</td>
                       <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
                     </tr>
 
@@ -306,37 +310,38 @@
                 </table>
               </div>
               <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
-<table class="table table-bordered table-custom table-striped ">
-                  
+              <table class="table table-bordered table-custom table-striped ">
+                  <thead >
+                    <tr>
+                      <td style="color: ">DichVu</td>
+                      <td>Giờ</td>
+                      <td>Hướng dẫn viên</td>
+                      <td>Đăng kí ngay</td>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <td>Gym</td>
+                      <td>Yoga</td>
                       <td>8:00am - 10:00am</td>
-                      <td>John Doe</td>
+                      <td>Phạm Văn Mách </td>
                       <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
                     </tr>
                     <tr>
-                      <td>Meditation</td>
+                      <td>Aerobic</td>
                       <td>10:00am - 10:30am</td>
-                      <td>James Holmes</td>
+                      <td>Tố vấn tối cao Trần Dần</td>
                       <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
                     </tr>
                     <tr>
-                      <td>Weight Lifting</td>
+                      <td>Boxing</td>
                       <td>1:00pm - 2:30pm</td>
-                      <td>Ben Smith</td>
+                      <td>Bùi Văn Anh Huy </td>
                       <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
                     </tr>
                     <tr>
-                      <td>Crossfit</td>
+                      <td>Zumba</td>
                       <td>3:00pm - 3:45pm</td>
-                      <td>Craig Peters</td>
-                      <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
-                    </tr>
-                    <tr>
-                      <td>Aerobics</td>
-                      <td>5:00pm - 5:30pm</td>
-                      <td>Paul Green</td>
+                      <td>Nguyễn Thị THanh Thảo</td>
                       <td class="text-center"><a href="#contact-section" class="smoothscroll">Join Now</a></td>
                     </tr>
 
@@ -639,41 +644,66 @@
 
 
 
-            <h2 class="section-title mb-3">Contact Us</h2>
+            <h2 class="section-title mb-3">Registration</h2>
             <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam
               temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-
-            <form method="post" data-aos="fade">
+              @if(count($errors)>0) 
+                <!--kiểm tra điều kiện errors lưu các điều kiện từ validate -->
+                <div class="alert alert-danger">
+                    @foreach($errors->all() as $err)
+                        {{$err}} <br>
+                    @endforeach
+                </div>
+              @endif 
+              @if(session('thongbao'))
+                  <div class="alert alert-success">
+                  {{session('thongbao')}}
+                  </div>
+              @endif
+          <form action="dangky" method="post" >
+              <input type="hidden" name="_token" value="{{csrf_token()}}">
               <div class="form-group row">
                 <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input name="Ten" type="text" class="form-control" placeholder="Họ Và Tên">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last name">
+                  <input name="Sdt" type="text" class="form-control" placeholder="Số điện thoại">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12 ">
+                    <label></label>
+                    <br>
+                    <input name="NgaySinh" type="date" id="ngaysinh-add" class="form-control" value="" required="required" title="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label>Dịch Vụ</label>
+                    <br>
+                    <select class="form-control" name="DichVu">
+                        @foreach($dichvu as $value)
+                        <option value="{{$value->id}}" style="color: black;">{{$value->Ten}}</option>  
+                        @endforeach
+                    </select>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Subject">
+                      
+                    <label>Gói Dịch Vụ</label>
+                    <br>
+                    <select class="form-control" name="GoiDichVu" >
+                        @foreach($goidichvu as $value)
+                        <option value="{{$value->id}}" style="color: black;">{{$value->Ten}}</option>  
+                        @endforeach  
+                    </select>
+  
                 </div>
               </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10"
-                    placeholder="Write your message here."></textarea>
-                </div>
-              </div>
-
               <div class="form-group row">
                 <div class="col-md-6">
-
                   <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
                 </div>
               </div>
@@ -742,7 +772,7 @@
 
   </div>
   <!-- .site-wrap -->
-
+<!-- <base href="{{asset('')}}"> -->
   <script src="{{asset('frontend/js/jquery-3.3.1.min.js')}}"></script>
   <script src="{{asset('frontend/s/jquery-migrate-3.0.1.min.js')}}"></script>
   <script src="{{asset('frontend/js/jquery-ui.js')}}"></script>
@@ -757,12 +787,8 @@
   <script src="{{asset('frontend/js/jquery.fancybox.min.js')}}"></script>
   <script src="{{asset('frontend/js/jquery.sticky.js')}}"></script>
   <script src="{{asset('frontend/js/jquery.mb.YTPlayer.min.js')}}"></script>
-
-
-
-
   <script src="{{asset('frontend/js/main.js')}}"></script>
-
+  
 </body>
 
 </html>

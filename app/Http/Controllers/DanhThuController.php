@@ -87,7 +87,5 @@ class DanhThuController extends Controller
             'dichvu'=> $dichvu, 
             'tongsodichvu'=> $tongSoDichVu]);
     }
-    public function index(){
-        return view('frontend.index');
-      }  
+  
 }

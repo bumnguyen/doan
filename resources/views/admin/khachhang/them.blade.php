@@ -46,6 +46,12 @@
               </div>
               <br>
               <div>
+                <label>PassWord</label>
+                <br>
+                <input type="text"  class="form-control"  name="password" placeholder="PassWord" value="12345">
+              </div>
+              <br>
+              <div>
                 <label>Tải ảnh lên</label>
                 <br>
                 <input type="file" name="Hinh">

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class KhachHang extends Model
+class KhachHang extends Model 
 {
     protected $table = "KhachHang";
 
@@ -14,4 +14,7 @@ class KhachHang extends Model
      public function goidichvu(){
     	return $this->belongsTo('App\GoiDichVu', 'idGoiDichVu', 'id');
     	}
+ protected $fillable = [
+         'DienThoai', 'password',
+    ];
 }

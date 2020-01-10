@@ -42,11 +42,13 @@
                     <br>
                     <input type="text"  class="form-control"  name="DienThoai" placeholder="Điện thoại" value="{{$khachhang->DienThoai}}">
                   </div>
+                  <br>
                   <div>
-                    <label>Tải ảnh lên</label>
+                    <label>PassWord</label>
                     <br>
-                    <input type="file" name="Hinh" value="{{$khachhang->Hinh}}">
+                    <input type="text"  class="form-control"  name="password" placeholder="PassWord" value="12345">
                   </div>
+                  <br>
                   <div class="form-group">
                     <label>Dịch Vụ</label>
                     <br>
@@ -102,7 +104,6 @@
                     <input class="form-control"  type="text" name="ConLai" placeholder="00/00/0000"  value="{{$khachhang->ConLai}}">
                   </div>
           		    <button type="submit" class="btn btn-primary">Sửa</button>
-          		    <button type="reset" class="btn btn-primary">Reset</button>
                   <button type="button"  class="btn btn-info"><a style="color: #000000" href="admin/khachhang/danhsach">Trở lại</a></button>
                 </div>  
               </div>
